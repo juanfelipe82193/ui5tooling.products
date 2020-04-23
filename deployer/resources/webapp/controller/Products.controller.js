@@ -1,0 +1,1 @@
+sap.ui.define(["tutorial/products/controller/BaseController"],function(t){"use strict";return t.extend("tutorial.products.controller.Products",{handleListItemPress:function(t){var r=sap.ui.core.UIComponent.getRouterFor(this);var o=t.getSource().getBindingContext().getProperty("ProductID");r.navTo("ProductDetail",{productId:o})}})});

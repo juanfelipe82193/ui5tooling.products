@@ -1,0 +1,32 @@
+{
+	"name": "products",
+	"version": "0.0.1",
+	"buildTimestamp": "202004222246",
+	"scmRevision": "",
+	"libraries": [
+		{
+			"name": "sap.ui.unified",
+			"version": "1.77.0",
+			"buildTimestamp": "202004222246",
+			"scmRevision": ""
+		},
+		{
+			"name": "sap.ui.core",
+			"version": "1.77.0",
+			"buildTimestamp": "202004222246",
+			"scmRevision": ""
+		},
+		{
+			"name": "sap.ui.layout",
+			"version": "1.77.0",
+			"buildTimestamp": "202004222246",
+			"scmRevision": ""
+		},
+		{
+			"name": "sap.m",
+			"version": "1.77.0",
+			"buildTimestamp": "202004222246",
+			"scmRevision": ""
+		}
+	]
+}

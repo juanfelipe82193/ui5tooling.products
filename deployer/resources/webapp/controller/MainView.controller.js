@@ -1,0 +1,1 @@
+sap.ui.define(["tutorial/products/controller/BaseController"],function(t){"use strict";return t.extend("tutorial.products.controller.MainView",{})});

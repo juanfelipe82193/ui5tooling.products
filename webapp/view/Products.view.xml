@@ -1,0 +1,34 @@
+ <mvc:View controllerName="tutorial.products.controller.Products"
+  xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+  xmlns:smartList="sap.ui.comp.smartlist"
+  xmlns:smartTable="sap.ui.compsmarttable"
+  displayBlock="true"
+  xmlns="sap.m"
+  xmlns:mvc="sap.ui.core.mvc">
+  <Page>
+    <smartFilterBar:SmartFilterBar 
+      id="smartFilterBar" 
+      persistencyKey="UniqueAndStablePersistencyKey" 
+      entitySet="Products" 
+      considerSelectionVariants="true" />
+    <smartList:SmartList
+        id="smartProductList"
+        smartFilter="smartFilterBar"
+        entitySet="Products"
+        expandFields="Category"
+        header="Products List"
+        showRowCount="true"
+        showFullScreenButton="true"
+        enableAutoBinding="true">
+        <smartList:listItemTemplate>
+            <StandardListItem 
+              id="listTemplate" 
+              type="Navigation" 
+              press="handleListItemPress" 
+              title="{ProductName}" 
+              info="{= ${UnitPrice} + ' €' }" 
+              description="{Category/CategoryName}" />
+        </smartList:listItemTemplate>
+    </smartList:SmartList>
+  </Page>
+</mvc:View>
